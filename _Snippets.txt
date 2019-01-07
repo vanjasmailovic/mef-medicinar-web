@@ -1,0 +1,38 @@
+
+            <div class="row section featured topspace">
+                <h2 class="section-title"><span>Info</span></h2>
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 text-center">
+                        <h3 class="text-center">O èasopisu</h3>
+                        <p>Proèitaj sve o èasopisu ovdje.</p>
+                        <p class="text-center"><a href="o_casopisu.html" class="btn btn-action">Proèitaj</a></p>
+                    </div>
+                    <div class="col-sm-6 col-md-3  text-center">
+                        <h3 class="text-center">Uredništvo</h3>
+                        <p>Sve o uredništvu na jednom mjestu.</p>
+                        <p class="text-center"><a href="urednistvo.html" class="btn btn-action">Proèitaj</a></p>
+                    </div>
+                    <div class="col-sm-6 col-md-3  text-center">
+                        <h3 class="text-center">Upute za pisanje</h3>
+                        <p>Proèitaj naše upute za pisanje.</p>
+                        <p class="text-center"><a href="upute_za_pisanje.html" class="btn btn-action">Proèitaj</a></p>
+                    </div>
+					<div class="col-sm-6 col-md-3  text-center">
+                        <h3 class="text-center">Kontakt</h3>
+                        <p>Imaš ideju ili prijedlog? Pošalji ga ovdje!</p>
+                        <p class="text-center"><a href="ideje_i_prijedlozi.php" class="btn btn-action">Proèitaj</a></p>
+                    </div>
+                </div>
+            </div> <!-- / section -->
+			
+			<div class="row section topspace hidden-xs">
+				<div class="col-md-5">
+                    <p class="lead-no-margin text-left text-muted">"Imati svoj, studentski, struèni i znanstveni èasopis privilegija je samo najboljih fakulteta."</p>
+					<br>
+					<p class="lead-small text-right text-muted">- prof.dr.sc. Josip Pasini (glavni urednik 1971.-1973.)</p>
+				</div>
+				<div class="col-md-7">
+					<p class="lead-no-margin text-left text-muted">"Višestruko je korisno raditi u èasopisu. Stekne se puno prijatelja, poznanika, stvara se nešto kreativno, razvija se èovjek organizacijski, ukratko, time se razvija cijeli jedan aspekt liènosti."</p>
+					<p class="lead-small text-right text-muted">- doc.dr.sc. Dražen Pulaniæ (glavni urednik 1996.-1999.)</p>
+                </div>
+            </div> <!-- / section -->

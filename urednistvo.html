@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport"    content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Medicinar">
+        <meta name="author"      content="MEF Zagreb">
+
+        <title>Uredništvo</title>
+
+        <link rel="shortcut icon" href="assets/images/icon-ss.png">
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+        <!-- Icons -->
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
+        <!-- Custom styles -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="assets/js/template.js"></script>
+        <script type="text/javascript">
+
+            $(document).ready(function() {
+                // navigation click actions	
+                $('.scroll-link').on('click', function(event) {
+                    event.preventDefault();
+                    var sectionID = $(this).attr("data-id");
+                    scrollToID('#' + sectionID, 750);
+                });
+                // scroll to top action
+                $('.scroll-top').on('click', function(event) {
+                    event.preventDefault();
+                    $('html, body').animate({scrollTop: 0}, 'slow');
+                });
+                // mobile nav toggle
+                $('#nav-toggle').on('click', function(event) {
+                    event.preventDefault();
+                    $('#main-nav').toggleClass("open");
+                });
+            });
+// scroll function
+            function scrollToID(id, speed) {
+                var offSet = 140;
+                var targetOffset = $(id).offset().top - offSet;
+                var mainNav = $('#main-nav');
+                $('html,body').animate({scrollTop: targetOffset}, speed);
+                if (mainNav.hasClass("open")) {
+                    mainNav.css("height", "15px").removeClass("in").addClass("collapse");
+                    mainNav.removeClass("open");
+                }
+            }
+            if (typeof console === "undefined") {
+                console = {
+                    log: function() {
+                    }
+                };
+            }
+        </script>
+        <style>
+            .imgLogo{
+                max-width: 160px;
+				margin-right: 5px;
+            }
+        </style>
+    </head>
+    <body class="home_cover2">
+
+        <header id="header">
+            <div id="head" class="parallax" parallax-speed="2">
+                <h1 id="logo" class="text-center">
+                    <p/>
+                </h1>
+            </div>
+
+            <nav class="navbar navbar-default navbar-sticky">
+                <div class="container-fluid">
+
+                    <div class="navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.php">Home</a></li>
+                            <li><a href="o_casopisu.html">O ČASOPISU</a></li>
+                             
+                            <li  class="active"><a href="urednistvo.html">UREDNIŠTVO</a></li>
+                            <li><a href="upute_za_pisanje.html">UPUTE ZA PISANJE</a></li>
+							<li><a href="arhiva.html">ARHIVA</a></li>
+                            <li><a href="ideje_i_prijedlozi.php ">IDEJE I PRIJEDLOZI</a></li>
+                        </ul>
+                    </div><!--/.nav-collapse -->			
+                </div>	
+            </nav>
+        </header>
+
+    <main id="main">
+        <div class="container">
+			<div class="row topspace">
+                <!-- div main content -->
+                <div class="col-md-push-1 col-md-10 text-center">
+				
+					<div class="media hidden-xs">
+						<a class="pull-left" href="http://www.facebook.com/una.smailovic" target="_blank">
+							<img class="media-object imgLogo img-rounded" src="assets/images/mef_6.jpg" alt="Una Smailović">
+						</a>
+						<div class="media-body">
+							<h4 class="media-heading text-left">Una Smailović, glavna urednica</h4>
+							<p class="text-justify">
+							Una Smailović studentica je 6. godine čiji je put u Medicinaru popraćen ulogom Mrava, urednice Sporta, potom Znanosti do mjesta glavne urednice. Kao i ostali supatnici godine, uglavnom obitava na glasovitom Štamparu i okolnim mjestima. U slobodne trenutke možete je pronaći na Farmakologiji/Institutu za mozak gdje se bavi znanstvenim radom, na raznim terenima Zagreba gdje pokušava igrati tenis ili vikendom u nešto kasnije sate na nekom od gužvovitih mjesta naše metropole. Dioptrija joj je dogurala do -3, ali (i dalje) rado prži jagodice za svojim laptopom gdje se malo po malo rađa novi broj Medicinara. Nakon odrađenih obaveza najviše voli putovati, pa se njen "tihi” glasić katkad može čuti i s drugih kontinenata. No, uvijek dostupna, rado će vam odgovoriti na upite i mailove. Pogotovo ako kasnite sa člancima! 
+							<br>
+							<a href="http://www.facebook.com/una.smailovic" target="_blank"><i class="fa fa-facebook-square fa-lg"></i>&nbsp;</a>
+							<a href="mailto:smailovic.una@gmail.com" target="_blank"><i class="fa fa-envelope fa-lg"></i>&nbsp;</a>
+							<a href="#"><i class="fa fa-phone fa-lg"></i>&nbsp;</a> +385989504740
+							</p>
+						</div>
+					</div>
+									
+					<div class="media visible-xs">
+						<a class="" href="http://www.facebook.com/una.smailovic" target="_blank">
+							<img class="media-object imgLogo img-rounded align-center" src="assets/images/mef_6.jpg" alt="Una Smailović">
+						</a>
+						<br>
+						<div class="media-body">
+							<h4 class="media-heading text-center">Una Smailović, glavna urednica</h4>
+							<p class="text-center">
+								Una Smailović studentica je 6. godine čiji je put u Medicinaru popraćen ulogom Mrava, urednice Sporta, potom Znanosti do mjesta glavne urednice. 
+								<br>
+								<br>
+								<a href="http://www.facebook.com/una.smailovic" target="_blank"><i class="fa fa-facebook-square fa-2x"></i>&nbsp;</a>
+								<a href="mailto:smailovic.una@gmail.com" target="_blank"><i class="fa fa-envelope fa-2x"></i>&nbsp;</a>
+								<a href="#"><i class="fa fa-phone fa-2x"></i>&nbsp;</a> +385989504740
+							</p>
+						</div>	
+					</div>
+					
+                        
+					<div class="media hidden-xs">
+						<a class="pull-left" href="https://www.facebook.com/ines.bosnic.73" target="_blank">
+							<img class="media-object imgLogo img-rounded" src="assets/images/mef_8.jpg" alt="Ines Bosnić">
+						</a>
+						<div class="media-body">
+							<h4 class="media-heading text-left">Ines Bosnić, urednica Znanosti</h4>
+							<p class="text-justify">
+								Studentica 6. godine i supatnik jednakih razmjera. Priča se da ju je znanost zaintrigirala još je grijala klupe Pete gimnazije, a za to krivi nekoliko istraživačkih radova, smotri i ljetnih škola. Na faksu se priključila istraživanjima iz kardiologije kao i obiteljske medicine. Osim po dugim zlatnim lasima, mlađi naraštaji imaju je priliku prepoznati u ulozi demonstratora iz predmeta patofiziologija. Slobodno vrijeme provodi u učenju njemačkog i francuskog, druženju s boljom polovicom, na taekwondou i putovanjima. Navodno distance do nastavnih baza krati vožnjom na plavom skuteru. Za sve što vas zanima iz područja Znanosti rado će vam se javiti, očekujte brz odogovor pun novih ideja!
+								<br>
+								<a href="https://www.facebook.com/ines.bosnic.73" target="_blank"><i class="fa fa-facebook-square fa-lg"></i>&nbsp;</a>
+								<a href="mailto:inesbosnic@gmail.com" target="_blank"><i class="fa fa-envelope fa-lg"></i>&nbsp;</a>
+								<a href="#"><i class="fa fa-phone fa-lg"></i>&nbsp;</a> +385989098418
+							</p>
+						</div>
+					</div>
+					
+					<div class="media visible-xs">
+						<a class="" href="https://www.facebook.com/ines.bosnic.73" target="_blank">
+							<img class="media-object imgLogo img-rounded align-center" src="assets/images/mef_8.jpg" alt="Ines Bosnić">
+						</a>
+						<br>
+						<div class="media-body">
+							<h4 class="media-heading text-center">Ines Bosnić, urednica Znanosti</h4>
+							<p class="text-center">
+								Studentica 6. godine i supatnik jednakih razmjera. Za sve što vas zanima iz područja Znanosti rado će vam se javiti, očekujte brz odogovor pun novih ideja!
+								<br>
+								<br>
+								<a href="https://www.facebook.com/ines.bosnic.73" target="_blank"><i class="fa fa-facebook-square fa-2x"></i>&nbsp;</a>
+								<a href="mailto:inesbosnic@gmail.com" target="_blank"><i class="fa fa-envelope fa-2x"></i>&nbsp;</a>
+								<a href="#"><i class="fa fa-phone fa-2x"></i>&nbsp;</a> +385989098418
+							</p>
+						</div>
+					</div>
+					
+					
+					<div class="media hidden-xs">
+						<a class="pull-left" href="mailto:petra.radic108@gmail.com" target="_blank">
+							<img class="media-object imgLogo img-rounded" src="assets/images/mef_5.jpg" alt="Petra Radić">
+						</a>
+						<div class="media-body">
+							<h4 class="media-heading text-left">Petra Radić, urednica Studentskog života</h4>
+							<p class="text-justify">
+							Pripadnica generacije koja trenutačno obilazi sve naše kliničke baze. Osim što se zabavlja učenjem predmeta 5. godine, voli pisanje i kreativnost koju ono nosi. Kaže da je najčešće opisuju s tri riječi: brbljava, tvrdoglava i snalažljiva. Pomno prati i sudjeluje na svim zbivanjima našeg fakulteta (i šire) kako bi ih crno na bijelo prenijela u svoju voljenu rubriku Medicinara; Studentski život. Preferira put preko MIOC-a i Gornjeg prečaca, stoga ćete je često zateći kako (niti najmanje zadihana) hita na nastavu na Rebru. Šuška se i da je demonstrator iz Propedeutike na najdražoj joj Kardiologiji. Kao i svaki urednik Studentskog života, voli sve što vole mladi. Poručuje svim Mravima i oni koji će to postati: ako želite dobro pisati - čitajte puno, pišite još više! 
+							<br>
+							<a href="mailto:petra.radic108@gmail.com" target="_blank"><i class="fa fa-envelope fa-lg"></i>&nbsp;</a>
+							<a href="#"><i class="fa fa-phone fa-lg"></i>&nbsp;</a> +385992595417
+							</p>
+						</div>
+					</div>
+					
+					<div class="media visible-xs">
+						<a class="" href="mailto:petra.radic108@gmail.com" target="_blank">
+							<img class="media-object imgLogo img-rounded align-center" src="assets/images/mef_5.jpg" alt="Petra Radić">
+						</a>
+						<br>
+						<div class="media-body">
+							<h4 class="media-heading text-center">Petra Radić, urednica Studentskog života</h4>
+							<p class="text-center">
+								Pripadnica generacije koja trenutačno obilazi sve naše kliničke baze. Poručuje svim Mravima i oni koji će to postati: ako želite dobro pisati - čitajte puno, pišite još više!
+								<br>
+								<br>
+								<a href="mailto:petra.radic108@gmail.com" target="_blank"><i class="fa fa-envelope fa-2x"></i>&nbsp;</a>
+								<a href="#"><i class="fa fa-phone fa-2x"></i>&nbsp;</a> +385992595417
+							</p>
+						</div>
+					</div>
+					
+					
+					<div class="media hidden-xs">
+						<a class="pull-left" href="https://www.facebook.com/ivana.trivic.5" target="_blank">
+							<img class="media-object imgLogo img-rounded" src="assets/images/mef_7.jpg" alt="Ivana Trivić">
+						</a>
+						<div class="media-body">
+							<h4 class="media-heading text-left">Ivana Trivić, urednica Društva</h4>
+							<p class="text-justify">
+							Puljanka koja se nakon završene opće gimnazije, gdje je sudjelovala u radu niza međunarodnih znanstvenih kampova u Hrvatskoj i Njemačkoj, ipak odlučila za studiranje u glavnom gradu Lijepe naše. 2010. godine postaje kuma broda Pomer i stipendist Uljanik Plovidbe. Ova studentica 5.godine je dugogodišnji član Medicinara, a ove je godine postala urednica Društva i zamjenica glavne urednice. U slobodno vrijeme uči njemački jezik, pravi torte i provodi previše vremena na Internetu, ponekad i na Courseri. Tako smo čuli da je putem ove online edukacijske platforme u travnju 2014. s odličnim uspjehom položila kolegij Design and Interpretation of Clinical Trials na Sveučilištu Johns Hopkins… No, i uz takve uspjehe i sate provedene na Internetu, uvijek je dostupna za vaša pitanja! 
+							<br>
+							<a href="https://www.facebook.com/ivana.trivic.5" target="_blank"><i class="fa fa-facebook-square fa-lg"></i>&nbsp;</a>
+							<a href="mailto:ivana.trivic.0@gmail.com" target="_blank"><i class="fa fa-envelope fa-lg"></i>&nbsp;</a>
+							<a href="#"><i class="fa fa-phone fa-lg"></i>&nbsp;</a> +385959037747
+							</p>
+						</div>
+					</div>
+					
+					<div class="media visible-xs">
+						<a class="" href="https://www.facebook.com/ivana.trivic.5" target="_blank">
+							<img class="media-object imgLogo img-rounded align-center" src="assets/images/mef_7.jpg" alt="Ivana Trivić">
+						</a>
+						<br>
+						<div class="media-body">
+							<h4 class="media-heading text-center">Ivana Trivić, urednica Društva</h4>
+							<p class="text-center">
+								Puljanka koja se nakon završene opće gimnazije, gdje je sudjelovala u radu niza međunarodnih znanstvenih kampova u Hrvatskoj i Njemačkoj, ipak odlučila za studiranje u glavnom gradu Lijepe naše. Uvijek je dostupna za vaša pitanja!
+								<br>
+								<br>
+								<a href="https://www.facebook.com/ivana.trivic.5" target="_blank"><i class="fa fa-facebook-square fa-2x"></i>&nbsp;</a>
+								<a href="mailto:ivana.trivic.0@gmail.com" target="_blank"><i class="fa fa-envelope fa-2x"></i>&nbsp;</a>
+								<a href="#"><i class="fa fa-phone fa-2x"></i>&nbsp;</a> +385959037747
+							</p>
+						</div>
+					</div>
+					
+					
+					<div class="media hidden-xs">
+						<a class="pull-left" href="https://www.facebook.com/filip.derke" target="_blank">
+							<img class="media-object imgLogo img-rounded" src="assets/images/mef_11.jpg" alt="Filip Đerke">
+						</a>
+						<div class="media-body">
+							<h4 class="media-heading text-left">Filip Đerke, urednik Tehologije</h4>
+							<p class="text-justify">
+							Istaknuti člank Sekcije za neuroznanost i student 4. godine, novi je urednik rubrike Tehnologija. Uz sve obaveze koje nosi prva, po nekima najbolja, klinička godina, rado se bavi i plivanjem te vožnjom bicikla po imenu Weigert. Vjerodostojnost istoga imali ste priliku provjeriti kroz njegov putopis o avanturi na dva kotača koji je krasio zadnji broj voljenog nam časopisa. Rado piše članke za Znanost, ali s jednakim veseljem popunjava i retke ostalih rubrika. Čuli smo da preferira rano ustajanje, stoga slobodno “ubijte vrijeme” na ranojutarnjim predavanjima tako što ćete ga zasipati porukama i upitima. Komunikativan i otvoren, brzopotezno rješava sve vaše nedoumice. 
+							<br>
+							<br>
+							<a href="https://www.facebook.com/filip.derke" target="_blank"><i class="fa fa-facebook-square fa-lg"></i>&nbsp;</a>
+							<a href="mailto:fderke@me.com" target="_blank"><i class="fa fa-envelope fa-lg"></i>&nbsp;</a>
+							<a href="#"><i class="fa fa-phone fa-lg"></i>&nbsp;</a> +38598585060
+							</p>
+						</div>
+					</div>
+					
+					<div class="media visible-xs">
+						<a class="" href="https://www.facebook.com/filip.derke" target="_blank">
+							<img class="media-object imgLogo img-rounded align-center" src="assets/images/mef_11.jpg" alt="Filip Đerke">
+						</a>
+						<br>
+						<div class="media-body">
+							<h4 class="media-heading text-center">Filip Đerke, urednik Tehologije</h4>
+							<p class="text-center">
+								Istaknuti člank Sekcije za neuroznanost i student 4. godine, novi je urednik rubrike Tehnologija. Komunikativan i otvoren, brzopotezno rješava sve vaše nedoumice.
+								<br>
+								<br>
+								<a href="https://www.facebook.com/filip.derke" target="_blank"><i class="fa fa-facebook-square fa-2x"></i>&nbsp;</a>
+								<a href="mailto:fderke@me.com" target="_blank"><i class="fa fa-envelope fa-2x"></i>&nbsp;</a>
+								<a href="#"><i class="fa fa-phone fa-2x"></i>&nbsp;</a> +38598585060
+							</p>
+						</div>
+					</div>
+					
+					
+					<div class="media hidden-xs">
+						<a class="pull-left" href="https://www.facebook.com/profile.php?id=1008409039" target="_blank">
+							<img class="media-object imgLogo img-rounded" src="assets/images/mef_10.jpg" alt="Filip Lončarić">
+						</a>
+						<div class="media-body">
+							<h4 class="media-heading text-left">Filip Lončarić, urednik Sporta</h4>
+							<p class="text-justify">
+							Jedan je od onih koji čuju od sestre od prijateljeve cure da je atmosfera određene udruge super pa dođe provjeriti. Ovaj student 4. godine sličnom je pričom postao član Medicinara još na 1. godini fakulteta, a danas je novi urednik rubrike Sport. Kaže da su ga sastanci i ljudi impresionirali, a atmosfera prosto svidjela; “dobar miks rada i ležernosti”. Uostalom, oduvijek je volio pisati. Vrijeme izvan fakultetskih prostorija provodi baveći se veslanjem i planirajući spontane izlete. Zna ga se sresti na edukacijama udruge StEPP, tako da vas može i oživiti po potrebi. Nerijetko ga možete čuti kako predlaže nove ideje za Medicinar, stoga mu se nemojte ustručavati javiti (priča se da su se njegove teme prve rasprodale!). Za istinitost navedenih informacija, dođite na jedan od sastanaka i uvjerite se sami. 
+							<br>
+							<a href="https://www.facebook.com/profile.php?id=1008409039" target="_blank"><i class="fa fa-facebook-square fa-lg"></i>&nbsp;</a>
+							<a href="mailto:loncaric.filip@gmail.com" target="_blank"><i class="fa fa-envelope fa-lg"></i>&nbsp;</a>
+							<a href="#"><i class="fa fa-phone fa-lg"></i>&nbsp;</a> +385912220480
+							</p>
+						</div>
+					</div>
+					
+					<div class="media visible-xs">
+						<a class="" href="https://www.facebook.com/profile.php?id=1008409039" target="_blank">
+							<img class="media-object imgLogo img-rounded align-center" src="assets/images/mef_10.jpg" alt="Filip Lončarić">
+						</a>
+						<br>
+						<div class="media-body">
+							<h4 class="media-heading text-center">Filip Lončarić, urednik Sporta</h4>
+							<p class="text-center">
+								Jedan je od onih koji čuju od sestre od prijateljeve cure da je atmosfera određene udruge super pa dođe provjeriti. Za istinitost navedenih informacija, dođite na jedan od sastanaka i uvjerite se sami.
+								<br>
+								<br>
+								<a href="https://www.facebook.com/profile.php?id=1008409039" target="_blank"><i class="fa fa-facebook-square fa-2x"></i>&nbsp;</a>
+								<a href="mailto:loncaric.filip@gmail.com" target="_blank"><i class="fa fa-envelope fa-2x"></i>&nbsp;</a>
+								<a href="#"><i class="fa fa-phone fa-2x"></i>&nbsp;</a> +385912220480
+							</p>
+						</div>
+					</div>
+					
+					
+					<div class="media hidden-xs">
+						<a class="pull-left" href="https://www.facebook.com/ino.kermc" target="_blank">
+							<img class="media-object imgLogo img-rounded" src="assets/images/mef_9.jpg" alt="Ino Kermc">
+						</a>
+						<div class="media-body">
+							<h4 class="media-heading text-left">Ino Kermc, urednik Fotografije</h4>
+							<p class="text-justify">
+							Ino Kermc urednik je rubrike na koju ljudi često (svjesno) ne obraćaju previše pozornosti, a to je Fotografija. Fotografijom se bavi još od osnovne škole jer, kako kaže, kroz nju može drugima predočiti svijet onakvim kakvim ga on vidi… Osim toga, uz fotografa neizostavno idu i zgodni modeli što nikako ne može biti loše! No čuli smo i da ruši sve mitove o nekreativnosti medicinara, jer se bavi i glazbom, tj. svira klavir i gitaru. Ostatak svog vremena provodi čitajući stripove i učeći najromantičniji jezik Europe. Francuski, dakako. Uz sve to, student je 5. godine medicine, a njegovih ruku djela možete vidjeti u novom (zimskom) broju Medicinara. Najviše od svega, volio bi da mu se pridružite! 
+							<br>
+							<a href="https://www.facebook.com/ino.kermc" target="_blank"><i class="fa fa-facebook-square fa-lg"></i>&nbsp;</a>
+							<a href="mailto:ino.kermc@gmail.com" target="_blank"><i class="fa fa-envelope fa-lg"></i>&nbsp;</a>
+							<a href="#"><i class="fa fa-phone fa-lg"></i>&nbsp;</a> +385915478844
+							</p>
+						</div>
+					</div>
+					
+					<div class="media visible-xs">
+						<a class="" href="https://www.facebook.com/ino.kermc" target="_blank">
+							<img class="media-object imgLogo img-rounded align-center" src="assets/images/mef_9.jpg" alt="Ino Kermc">
+						</a>
+						<br>
+						<div class="media-body">
+							<h4 class="media-heading text-center">Ino Kermc, urednik Fotografije</h4>
+							<p class="text-center">
+								Ino Kermc urednik je rubrike na koju ljudi često (svjesno) ne obraćaju previše pozornosti, a to je Fotografija. Najviše od svega, volio bi da mu se pridružite!
+								<br>
+								<br>
+								<a href="https://www.facebook.com/ino.kermc" target="_blank"><i class="fa fa-facebook-square fa-2x"></i>&nbsp;</a>
+								<a href="mailto:ino.kermc@gmail.com" target="_blank"><i class="fa fa-envelope fa-2x"></i>&nbsp;</a>
+								<a href="#"><i class="fa fa-phone fa-2x"></i>&nbsp;</a> +385915478844
+							</p>
+						</div>
+					</div>
+					
+					<br>
+                </div>
+                <!-- /div -->
+			</div>
+        </div>	<!-- /container -->
+
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 widget">
+                    <h3 class="widget-title">Kontakt</h3>
+                    <div class="widget-body">
+                        <p>
+							<a href="mailto:medicinar@mef.hr">medicinar@mef.hr</a><br>
+                            Medicinski fakultet Sveučilišta u Zagrebu<br><br>
+                            <strong>Adresa:</strong> <br>Šalata 3<br> 10000 Zagreb<br> Hrvatska
+                        </p>	
+                    </div>
+                </div>
+
+                <div class="col-md-3 widget">
+                    <h3 class="widget-title">Follow us</h3>
+                    <div class="widget-body">
+                        <p class="follow-me-icons">
+                            <a href="https://www.facebook.com/Medicinar" target="_blank"><i class="fa fa-facebook-square fa-2"></i></a>
+                        </p>
+                    </div>
+                </div>
+
+
+            </div> <!-- /row of widgets -->
+        </div>
+    </footer>
+
+    <footer id="underfooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 widget col-md-offset-6">
+                    <div class="widget-body">
+                        <p class="text-right">
+                            2014 &copy; Medicinski fakultet Sveučilišta u Zagrebu. Sva prava pridržana. Logotip Medicinara je registrirani zaštitni znak u Republici Hrvatskoj.<br>
+							Website by <a href="https://www.facebook.com/vanja.smailovic">Vanja Smailović</a>.
+						</p>
+                    </div>
+                </div>
+            </div> <!-- /row of widgets -->
+        </div>
+    </footer>
+
+</body>
+</html>
